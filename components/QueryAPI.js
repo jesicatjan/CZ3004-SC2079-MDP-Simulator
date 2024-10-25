@@ -18,6 +18,13 @@ export default class QueryAPI extends BaseAPI {
       retrying: false,
     };
 
+    console.log("Sending request:", {
+      url: "/path",          // The endpoint
+      method: methodType.post,  // The HTTP method
+      headers: {},             // Assuming headers are in the second empty object
+      body: content,           // The payload/content being sent to the backend
+    });
+    
     // Send the request to the backend server
     this.JSONRequest("/path", methodType.post, {}, {}, content)
       .then((res) => {

@@ -217,6 +217,8 @@ export default function Simulator() {
     // Call the query function from the API
     QueryAPI.query(obstacles, robotX, robotY, robotDir, (data, err) => {
       if (data) {
+
+        console.log(data);
         // If the data is valid, set the path
         setPath(data.data.path);
         // Set the commands
@@ -375,11 +377,11 @@ export default function Simulator() {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center text-center bg-sky-200 rounded-xl shadow-xl mb-8">
+      <div className="flex flex-col items-center text-center bg-white rounded-xl shadow-xl mb-8">
         <h2 className="card-title text-black pt-4">Algorithm Simulator</h2>
       </div>
 
-      <div className="flex flex-col items-center text-center bg-sky-200 rounded-xl shadow-xl">
+      <div className="flex flex-col items-center text-center bg-gray-200 rounded-xl shadow-xl">
         <div className="card-body items-center text-center p-4">
           <h2 className="card-title text-black">Robot Position</h2>
           <div className="form-control">
@@ -421,7 +423,7 @@ export default function Simulator() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center text-center bg-sky-200 p-4 rounded-xl shadow-xl m-8">
+      <div className="flex flex-col items-center text-center bg-gray-200 p-4 rounded-xl shadow-xl m-8">
         <h2 className="card-title text-black pb-2">Add Obstacles</h2>
         <div className="form-control">
           <label className="input-group input-group-horizontal">
