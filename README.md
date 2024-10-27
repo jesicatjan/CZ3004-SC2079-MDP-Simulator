@@ -1,9 +1,6 @@
-<br />
-<p align="center">
-  <h1 align="center">
-    SC2079 Group 31 MDP - Algorithm Simulator
-  </h1>
-</p>
+<div align="center">
+  <h1>SC2079 Group 31 MDP - Algorithm Simulator</h1>
+</div>
 
 ## Setup
 
@@ -23,7 +20,7 @@ The simulator app will run at `localhost:3000`.
 
 The algorithm API server should be running at a specific address, which you will need to change in `BaseAPI.js` line 19, the default server address now is `localhost:5000`.
 
-<div style="display: flex; justify-content: center;">
+<div align="center">
   <img src="/images/Simulator.png" alt="Interface" width="350">
 </div>
 
